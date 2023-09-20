@@ -41,7 +41,7 @@ The main function in the 0-main.c file is the program's entry point.
 * fork(): Used to create a child process from a parent process.
 * execve(): Used to execute UNIX CLI arguments
 * perror(): Returns the specified error
-* wait():
+* wait(): waits for the parent function before implementing the child process
 * strcmp(): compares to strings
 * getenv(): This helps us get environment variables. It takes a char pointer and returns the value if there's a match else returns NULL.
 * malloc(): Allocates memory
