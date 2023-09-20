@@ -3,7 +3,7 @@
 /**
  * tokenizer - Tokenize a string into an array of tokens.
  * @line: The input string to tokenize.
- * Return: An array of token strings, or NULL on failure.
+ * Return: An array of token strings or NULL on failure.
  */
 char **tokenizer(char *line)
 {

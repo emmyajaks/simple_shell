@@ -3,7 +3,6 @@
 /**
  * _strdup - Duplicate a string.
  * @str: The string to duplicate.
- *
  * Return: A pointer to the duplicated string, or NULL on failure.
  */
 char *_strdup(const char *str)

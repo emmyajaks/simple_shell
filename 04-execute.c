@@ -4,7 +4,6 @@
  * @commnd: An array of command arguments.
  * @argv: An array of program arguments.
  * @idx: Index of the command in the input.
- *
  * Return: The exit status of the command.
  */
 int _execute(char **commnd, char **argv, int idx)

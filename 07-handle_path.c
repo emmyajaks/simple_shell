@@ -3,7 +3,6 @@
 /**
  * _getpath - Get the full path of an executable command.
  * @command: The name of the command.
- *
  * Return: The full path of the command, or NULL if not found.
  */
 char *_getpath(char *command)

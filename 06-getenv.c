@@ -3,7 +3,6 @@
 /**
  * _getenv - Get the value of an environment variable.
  * @variable: The name of the environment variable.
- *
  * Return: The value of the environment variable, or NULL if not found.
  */
 char *_getenv(char *variable)
