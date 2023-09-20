@@ -3,9 +3,10 @@
  * exit_shell - Handle the 'exit' built-in shell command.
  * @commnd: The command and its arguments.
  * @argv: The program's arguments.
- * @status: The exit status to update.
+ * @status: The exit status to be updated.
  * @idx: Index of the command in the input.
  */
+
 void exit_shell(char **commnd, char **argv, int *status, int idx)
 {
 	int exit_value = (*status);
