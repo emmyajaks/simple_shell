@@ -2,7 +2,6 @@
 /**
  * _itoa - Convert an integer to a string.
  * @o: The integer to convert.
- *
  * Return: A dynamically allocated string representing the integer.
  */
 char *_itoa(int o)
