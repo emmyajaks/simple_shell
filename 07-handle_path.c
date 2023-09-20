@@ -5,6 +5,7 @@
  * @command: The name of the command.
  * Return: The full path of the command, or NULL if not found.
  */
+
 char *_getpath(char *command)
 {
 	char *path_env, *full_cmd, *dir;
