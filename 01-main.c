@@ -2,7 +2,7 @@
 
 /**
  * main - Entry point for the simple shell
- * @ac: Number of command-line arguments
+ * @ac: Number of command-line arguments.
  * @argv: Array of command-line arguments.
  * Return: Always returns 0 (success).
  */
