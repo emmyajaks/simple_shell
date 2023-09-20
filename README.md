@@ -51,10 +51,6 @@ The main function in the 0-main.c file is the program's entry point.
 
 In summary, we use the while(1) (while true) to keep the prompt running after every command execution. isatty() helps limit the program to inputs from CLI only. getline() collects data from the CLI. If the argument passed is "ctrl+D", it sets getline() to -1 and exits the program after freeing up the allocated memory for the arguments.
 
-while (buffer[i]).......
-
-strtok(buffer, delim)....
-
 handle_path() which is assigned to path vaaiable gets the cli typed argument
 
 To implement the End Of File (close: ctrl+D) command we made use of the return value of getline (-1). We free buffer to prevent leaks and exit.
