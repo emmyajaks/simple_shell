@@ -2,6 +2,7 @@
 
 /**
  * read_line - Read a line of input from the user.
+ *
  * Return: A pointer to the input line or NULL on failure.
  */
 char *read_line(void)
