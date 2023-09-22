@@ -19,17 +19,17 @@ char *read_line(void);
 void freearray2D(char **array);
 char *_strcpy(char *dest, const char *src);
 char *_getenv(char *variable);
-char *_getpath(char *command);
+char *_getpath(char *commnd);
 void print_error(char *name, char *cmd, int idx);
 
 char *_strcat(char *dest, const char *src);
-int _execute(char **command, char **argv, int idx);
+int _execute(char **commnd, char **argv, int idx);
 char **tokenizer(char *line);
 
-int is_builtin(char *command);
-void handle_builtin(char **command, char **argv, int *status, int idx);
-void exit_shell(char **command, char **argv, int *status, int idx);
-void print_env(char **command, int *status);
+int is_builtin(char *commnd);
+void handle_builtin(char **commnd, char **argv, int *status, int idx);
+void exit_shell(char **commnd, char **argv, int *status, int idx);
+void print_env(char **commnd, int *status);
 
 int is_positive_number(char *str);
 int _atoi(char *str);
@@ -39,6 +39,5 @@ int _strcmp(const char *s1, const char *s2);
 char *_strdup(const char *str);
 char *_itoa(int o);
 void reverse_string(char *str, int len);
-
 
 #endif

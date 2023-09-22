@@ -1,14 +1,13 @@
 #include "shell.h"
-
 /**
  * main - Entry point for the simple shell
- * @ac: Number of command-line arguments.
- * @argv: Array of command-line arguments.
+ * @ac: Number of command-line arguments
+ * @argv: Array of command-line arguments
  * Return: Always returns 0 (success).
  */
 int main(int ac, char **argv)
 {
-	char *line = NULL, **command = NULL;
+	char *line = NULL, **commnd = NULL;
 	int status = 0, idx = 0;
 	(void)ac;
 
@@ -22,13 +21,13 @@ int main(int ac, char **argv)
 			return (status);
 		}
 		idx++;
-		command = tokenizer(line);
-		if (!command)
+		commnd = tokenizer(line);
+		if (!commnd)
 			continue;
 
-		if (is_builtin(command[0]))
-			handle_builtin(command, argv, &status, idx);
+		if (is_builtin(commnd[0]))
+			handle_builtin(commnd, argv, &status, idx);
 		else
-			status = _execute(command, argv, idx);
-			}
+			status = _execute(commnd, argv, idx);
+	}
 }

@@ -6,14 +6,14 @@
  */
 int is_positive_number(char *str)
 {
-	int i;
+	int m;
 
 	if (!str)
 		return (0);
 
-	for (i = 0; str[i]; i++)
+	for (m = 0; str[m]; m++)
 	{
-		if (str[i] < '0' || str[i] > '9')
+		if (str[m] < '0' || str[m] > '9')
 			return (0);
 	}
 	return (1);
@@ -27,12 +27,12 @@ int is_positive_number(char *str)
  */
 int _atoi(char *str)
 {
-	int i, num = 0;
+	int m, num = 0;
 
-	for (i = 0; str[i]; i++)
+	for (m = 0; str[m]; m++)
 	{
 		num *= 10;
-		num += (str[i] - '0');
+		num += (str[m] - '0');
 	}
 	return (num);
 }

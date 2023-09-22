@@ -1,5 +1,4 @@
 #include "shell.h"
-
 /**
  * freearray2D - Free a 2D array of strings and its individual elements.
  * @array: The 2D array to free.

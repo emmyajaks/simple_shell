@@ -6,7 +6,6 @@
  * @idx: Index of the command in the input.
  * Return: The exit status of the command.
  */
-
 int _execute(char **commnd, char **argv, int idx)
 {
 	char *full_cmd;

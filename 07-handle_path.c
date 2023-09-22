@@ -1,22 +1,21 @@
 #include "shell.h"
-
 /**
  * _getpath - Get the full path of an executable command.
- * @command: The name of the command.
+ * @commnd: The name of the command.
  * Return: The full path of the command, or NULL if not found.
  */
-char *_getpath(char *command)
+char *_getpath(char *commnd)
 {
 	char *path_env, *full_cmd, *dir;
 	int m;
 	struct stat st;
 
-	for (m = 0; command[m]; m++)
+	for (m = 0; commnd[m]; m++)
 	{
-		if (command[m] == '/')
+		if (commnd[m] == '/')
 		{
-			if (stat(command, &st) == 0)
-				return (_strdup(command));
+			if (stat(commnd, &st) == 0)
+				return (_strdup(commnd));
 		return (NULL);
 		}
 	}
@@ -28,12 +27,12 @@ char *_getpath(char *command)
 	dir = strtok(path_env, ":");
 	while (dir)
 	{
-		full_cmd = malloc(_strlen(dir) + _strlen(command) + 2);
+		full_cmd = malloc(_strlen(dir) + _strlen(commnd) + 2);
 		if (full_cmd)
 		{
 			_strcpy(full_cmd, dir);
 			_strcat(full_cmd, "/");
-			_strcat(full_cmd, command);
+			_strcat(full_cmd, commnd);
 			if (stat(full_cmd, &st) == 0)
 			{
 				free(path_env);
@@ -43,7 +42,6 @@ char *_getpath(char *command)
 			dir = strtok(NULL, ":");
 		}
 	}
-
 	free(path_env);
 	return (NULL);
 }

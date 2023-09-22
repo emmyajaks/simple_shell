@@ -1,11 +1,9 @@
 #include "shell.h"
-
 /**
  * tokenizer - Tokenize a string into an array of tokens.
  * @line: The input string to tokenize.
  * Return: An array of token strings or NULL on failure.
  */
-
 char **tokenizer(char *line)
 {
 	int m = 0, n = 0;
@@ -44,7 +42,7 @@ char **tokenizer(char *line)
 		token = strtok(NULL, DELIM);
 	}
 	array[m] = NULL;
-	free(line);
-	line = NULL;
+	free(line), line = NULL;
+
 	return (array);
 }
